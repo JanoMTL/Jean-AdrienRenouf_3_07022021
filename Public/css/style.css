@@ -3,6 +3,15 @@ body {
   height: fit-content;
   margin: 0;
   border: solid #12af66;
+  font-family: "roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body a {
+  color: black;
 }
 
 .header {
@@ -129,27 +138,27 @@ body {
 }
 .section_3_1 {
   width: 100%;
-  height: 5%;
+  height: 4%;
   margin-left: 2%;
 }
 .section_3_2 {
   width: 100%;
-  height: 94%;
+  height: 96%;
   margin: 0;
   border: brown solid thin;
 }
 .section_3_2_cards {
   width: 100%;
   border: solid #0508d4 thin;
-  height: 25%;
+  height: 23%;
   display: flex;
-  margin: 0;
+  margin-bottom: 5%;
   justify-items: center;
 }
 .section_3_2_cards_1 {
   width: 90%;
   height: 100%;
-  margin: 0;
+  margin: 0 5% 0% 5%;
   border: #0dee2b solid thin;
 }
 .section_3_2_cards_1_pict {
@@ -164,11 +173,13 @@ body {
 }
 .section_3_2_cards_1_legend {
   width: 100%;
+  height: 30%;
   display: flex;
 }
 .section_3_2_cards_1_legend_text {
   width: 75%;
   height: 100%;
+  border: thin orange solid;
 }
 .section_3_2_cards_1_legend_text_title {
   width: 100%;
@@ -179,16 +190,57 @@ body {
 .section_3_2_cards_1_legend_heart {
   width: 25%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid orange thin;
+}
+.section_3_2_cards_1_legend_heart i {
+  border: orangered thin solid;
+  height: 30%;
+  width: 30%;
+  font-size: 140%;
 }
 
-i {
-  height: 1rem;
-  width: 1rem;
+footer a {
+  color: white;
 }
 
-.icon_f {
-  width: 1rem;
-  height: 1rem;
+.foot {
+  width: 100%;
+  height: 20rem;
+  border: solid springgreen thin;
+  background-color: #302f2f;
+  color: white;
+}
+.foot_logo {
+  width: 100%;
+  height: 20%;
+}
+.foot_logo_ohmyfood {
+  background-color: transparent;
+  width: 35%;
+  padding: 5% 0 0 5%;
+}
+.foot_list {
+  width: 100%;
+  height: 80%;
+}
+.foot_list_icon {
+  margin-right: 2%;
+}
+.foot_list_icon i {
+  margin-right: 50%;
+  font-size: 1rem;
+}
+.foot_list ul li i:nth-child(2) {
+  border: red solid thin;
+}
+.foot_list ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border: olive thin solid;
 }
 
 /*# sourceMappingURL=style.css.map */

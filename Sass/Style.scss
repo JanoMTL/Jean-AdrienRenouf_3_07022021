@@ -11,6 +11,13 @@ body{
     height: fit-content;
     margin: 0;
     border: solid rgb(18, 175, 102);
+    font-family: 'roboto', sans-serif;
+}
+a{
+    text-decoration:none;
+}
+body a{
+    color: black;
 }
 
 .header{
@@ -147,27 +154,27 @@ body{
     border: tomato solid;
         &_1{
             width: 100%;
-            height: 5%;
+            height: 4%;
             margin-left: 2%;
 
         }
         &_2{
             width: 100%;
-            height: 94%;
+            height: 96%;
             margin: 0;
             border: brown solid thin;
                 &_cards{
                     width: 100%;
                     border: solid rgb(5, 8, 212) thin;
-                    height: 25%;
+                    height: 23%;
                     display: flex;
-                    margin: 0;
+                    margin-bottom: 5%;
                     justify-items: center;
                     
                         &_1{
                             width: 90%;
                             height: 100%;
-                            margin: 0;
+                            margin: 0 5% 0% 5%;
                             border: rgb(13, 238, 43) solid thin;
                                 &_pict{
                                     width: 100%;
@@ -181,10 +188,12 @@ body{
                                 }
                                 &_legend{
                                     width: 100%;
+                                    height: 30%;
                                     display: flex;
                                         &_text{
                                             width: 75%;
                                             height: 100%;
+                                            border: thin orange solid;
                                                 &_title{
                                                     width: 100%;
                                                 }
@@ -195,6 +204,17 @@ body{
                                         &_heart{
                                             width: 25%;
                                             height: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border: solid orange thin;
+                                                i{
+                                                   border: orangered thin solid;
+                                                   height: 30%;
+                                                   width: 30%;
+                                                   font-size: 140%;
+                                                   
+                                                }
                                         }
                                 }
                         }
@@ -202,11 +222,50 @@ body{
         }
 }
 
-i{
-    height: 1rem;
-    width: 1rem;
+
+footer a{
+    color: white;
 }
-.icon_f{
-    width: 1rem;
-    height: 1rem;
+.foot{
+    width: 100%;
+    height: 20rem;
+    border: solid springgreen thin;
+    background-color: rgb(48, 47, 47);
+    color: white;
+        &_logo{
+            width: 100%;
+            height: 20%;
+                &_ohmyfood{
+                    background-color: transparent;
+                    width: 35%;
+                    padding: 5% 0 0 5%;
+                    
+                    
+                }
+        }
+        &_list{
+            width: 100%;
+            height: 80%;
+                &_icon{
+                    margin-right: 2%;
+                }
+                &_icon i{
+                    margin-right: 50%;
+                    font-size: 1rem;
+                }
+               
+        }
+        &_list ul li i:nth-child(2){   
+            border: red solid thin;
+        }
+        &_list ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            border: olive thin solid;
+            
+        }
+    
+
+        
 }
