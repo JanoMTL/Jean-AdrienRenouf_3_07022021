@@ -2,7 +2,6 @@
   width: 100%;
   height: fit-content;
   margin: 0;
-  border: solid #12af66;
   font-family: "roboto", sans-serif;
 }
 
@@ -24,12 +23,10 @@ body a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: #020101 solid thin;
 }
 .header_logo_pict {
   height: 2rem;
   width: 11rem;
-  border: tomato thin solid;
 }
 
 input {
@@ -48,11 +45,9 @@ input {
   width: 100%;
   height: 3rem;
   background-color: #EAEAEA;
-  border: red solid;
   justify-items: center;
   display: flex;
   justify-content: center;
-  box-shadow: #bebdbd 10px 10px 10px;
 }
 .section_1_1_map {
   width: 100%;
@@ -60,7 +55,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: orange solid thin;
 }
 .section_1_1_map i {
   margin: 0 2.5% 1% 0;
@@ -74,22 +68,21 @@ input {
   width: 100%;
   height: 15rem;
   background-color: #F6F6F6;
-  border: blueviolet thin solid;
 }
 .section_1_2_title {
-  width: 75%;
+  width: 100%;
   display: flex;
   text-align: center;
+  justify-content: center;
   height: 30%;
   font-weight: bolder;
-  border: #050404 solid thin;
 }
 .section_1_2_subtitle {
   width: 80%;
   display: flex;
+  justify-content: center;
   text-align: center;
   height: 25%;
-  border: hotpink solid thin;
 }
 .section_1_2_button {
   width: 60%;
@@ -97,7 +90,11 @@ input {
   justify-content: center;
   height: 22%;
   margin-top: 4%;
-  border: hotpink solid thin;
+}
+.section_1_2_button :hover {
+  filter: opacity(80%);
+  filter: brightness(110%);
+  box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
 }
 .section_1_2_button_b {
   border-radius: 30px;
@@ -106,7 +103,7 @@ input {
   font-size: 0.9rem;
   font-weight: bold;
   border: none;
-  box-shadow: #cccaca 5px 5px 5px;
+  box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
@@ -122,8 +119,7 @@ input {
   font-weight: bolder;
 }
 .section_2_2 {
-  border: solid blue;
-  width: 100%;
+  width: 99%;
   height: 82%;
   margin: 0;
   display: flex;
@@ -135,13 +131,18 @@ input {
   display: flex;
   width: 90%;
   height: 28%;
+  margin-left: 5%;
   background-color: #F6F6F6;
   border-radius: 20px;
   box-shadow: #cccaca 5px 5px 5px;
-  border: red solid thin;
+}
+.section_2_2_card:hover {
+  background-color: #F5EDFF;
+}
+.section_2_2_card:hover > i {
+  color: #9356DC;
 }
 .section_2_2_card_s {
-  border: grey thin solid;
   width: 82%;
   display: flex;
   justify-content: space-between;
@@ -175,15 +176,11 @@ input {
   position: relative;
   right: 0.5rem;
 }
-.section_2_2_card:hover {
-  background-color: #F5EDFF;
-}
 
 .section_3 {
   width: 100%;
   height: 80rem;
   margin-top: 10%;
-  border: tomato solid;
 }
 .section_3_1 {
   width: 100%;
@@ -195,18 +192,15 @@ input {
 .section_3_1_title {
   height: 50%;
   margin: 0 0 2% 3%;
-  border: #9356DC solid;
 }
 .section_3_2 {
   width: 100%;
   height: 93%;
   margin: 0;
   background-color: #F6F6F6;
-  border: brown solid thin;
 }
 .section_3_2_cards {
   width: 100%;
-  border: solid #0508d4 thin;
   height: 22%;
   display: flex;
   margin-bottom: 5%;
@@ -219,15 +213,13 @@ input {
   border-radius: 20px;
   background-color: white;
   box-shadow: #dddcdc 5px 5px 5px;
-  border: #0dee2b solid thin;
 }
 .section_3_2_cards_1_pict {
   width: 99%;
   height: 70%;
-  border: black solid thin;
 }
 .section_3_2_cards_1_pict_1 {
-  width: 100%;
+  width: 101%;
   height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -243,7 +235,6 @@ input {
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: thin orange solid;
 }
 .section_3_2_cards_1_legend_text_title {
   width: 100%;
@@ -253,7 +244,6 @@ input {
   position: relative;
   bottom: 9%;
   left: 5%;
-  border: red solid thin;
 }
 .section_3_2_cards_1_legend_text_subtitle {
   width: 100%;
@@ -263,7 +253,6 @@ input {
   position: relative;
   bottom: 6%;
   left: 5%;
-  border: red solid thin;
 }
 .section_3_2_cards_1_legend_heart {
   width: 25%;
@@ -271,16 +260,18 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid orange thin;
 }
-.section_3_2_cards_1_legend_heart i {
-  border: orangered thin solid;
+.section_3_2_cards_1_legend_heart .far {
   height: 30%;
   width: 30%;
   font-size: 160%;
   color: #424141;
   position: relative;
   bottom: 0.4rem;
+  fill: #9356DC;
+}
+.section_3_2_cards_1_legend_heart .far:focus .fa-heart {
+  font-size: bolder;
 }
 
 footer a {
@@ -290,9 +281,9 @@ footer a {
 .foot {
   width: 100%;
   height: 18rem;
-  border: solid springgreen thin;
   background-color: #353535;
   color: white;
+  border: yellow solid;
 }
 .foot_logo {
   width: 100%;
@@ -301,6 +292,7 @@ footer a {
 .foot_logo_ohmyfood {
   background-color: transparent;
   width: 35%;
+  margin-left: 1rem;
   padding: 5% 0 0 5%;
 }
 .foot_list {
@@ -314,33 +306,30 @@ footer a {
   margin-right: 50%;
   font-size: 1rem;
 }
-.foot_list ul li i:nth-child(2) {
-  border: red solid thin;
-}
 .foot_list ul li {
   list-style: none;
   display: flex;
   align-items: center;
   height: 2.2rem;
-  border: olive thin solid;
 }
 
 .R1 {
   width: 100%;
   height: fit-content;
   margin: 0;
-  border: #353535 solid;
+  font-family: "roboto", sans-serif;
+  background-color: #F6F6F6;
+  border: steelblue solid;
 }
 .R1-header {
   width: 100%;
   margin: 0;
   height: 3rem;
-  border: springgreen solid thin;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 .R1-header-b1 {
-  border: black solid thin;
   width: 10%;
   display: flex;
   align-items: center;
@@ -353,52 +342,157 @@ footer a {
   color: #9356DC;
 }
 .R1-header-b2 {
-  border: black solid thin;
   width: 70%;
   display: flex;
   align-items: center;
 }
 .R1-header-b2-pict {
-  height: 1.5rem;
-  width: 8rem;
+  height: 1.7rem;
+  width: 9rem;
 }
 .R1-menu {
   width: 100%;
+  height: fit-content;
   margin: 0;
 }
 .R1-menu-header {
   width: 100%;
+  z-index: 2;
 }
 .R1-menu-header-pict {
   width: 100%;
+  height: 18rem;
   object-fit: cover;
 }
 .R1-menu-carte {
   width: 100%;
+  z-index: 1;
+  background-color: #F6F6F6;
+  height: fit-content;
+  position: relative;
+  bottom: 4rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 .R1-menu-carte-title {
-  border: black solid thin;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #F6F6F6;
 }
 .R1-menu-carte-title-text {
-  border: black solid thin;
-  width: 80%;
+  width: 70%;
   margin-left: 5%;
+  font-family: "Shrikhand";
+  font-size: 140%;
+}
+.R1-menu-carte-title-text h1 {
+  font-weight: 400;
 }
 .R1-menu-carte-title-heart {
-  border: black solid thin;
   width: 20%;
 }
 .R1-menu-carte-title-heart i {
   color: #2b2b2b;
-  font-size: 140%;
+  font-size: 150%;
   position: relative;
   top: 35%;
   left: 32%;
+}
+.R1-menu-carte-choix {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 10%;
+  background-color: #F6F6F6;
+}
+.R1-menu-carte-choix-entrees {
+  margin-bottom: 4%;
+  height: fit-content;
+}
+.R1-menu-carte-choix-entrees-title {
+  margin-left: 7%;
+}
+.R1-menu-carte-choix-entrees-title h2 {
+  font-size: 105%;
+  font-weight: 400;
+  padding-bottom: 1%;
+  width: 11%;
+  border-bottom: solid #99E2D0;
+}
+.R1-menu-carte-choix-entrees-nom {
+  width: 100%;
+  height: fit-content;
+}
+.R1-menu-carte-choix-entrees-nom-x {
+  width: 95%;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 0 5% 2%;
+  box-shadow: #e7e4e4 10px 10px 10px;
+}
+.R1-menu-carte-choix-entrees-nom-x-text {
+  width: 80%;
+  margin-left: 4%;
+  height: 100%;
+}
+.R1-menu-carte-choix-entrees-nom-x-text-titre {
+  margin: 0;
+  padding: 0;
+  height: 55%;
+}
+.R1-menu-carte-choix-entrees-nom-x-text-titre h3 {
+  font-size: 100%;
+}
+.R1-menu-carte-choix-entrees-nom-x-text-stitre {
+  margin: 0;
+  padding: 0;
+  height: 45%;
+}
+.R1-menu-carte-choix-entrees-nom-x-text-stitre p {
+  position: relative;
+  bottom: 0;
+  font-size: 85%;
+  position: relative;
+  bottom: 90%;
+}
+.R1-menu-carte-choix-entrees-nom-x-price {
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  color: #353434;
+}
+.R1-menu-carte-choix-entrees-nom-x-price h3 {
+  position: relative;
+  top: 8%;
+  font-size: 95%;
+}
+.R1-menu-carte-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  margin: 0;
+}
+.R1-menu-carte-button :hover {
+  filter: opacity(80%);
+  filter: brightness(110%);
+  box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
+}
+.R1-menu-carte-button-b {
+  border-radius: 30px;
+  width: 60%;
+  height: 100%;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
 /*# sourceMappingURL=style.css.map */
