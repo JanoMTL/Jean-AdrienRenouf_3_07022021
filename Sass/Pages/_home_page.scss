@@ -277,18 +277,34 @@
               justify-content: center;
               align-items: center;
               cursor: pointer;
-              &:hover{
-                  .far{
-                    color: $primary_color;
-                  } 
+            }
+            &_heart:hover{
+                 .fas{
+                   animation: menu-anim 2s forwards;
+                 }
+                 .far{
+                   animation: lds-spinner 100ms forwards;
+                 }
+               }                  
 
-              }                       
-
-              }
+              
+              
             }
           }
         }
       }
+    }
+
+    .fa-heart{
+      position: absolute;
+      opacity: 0;
+      color: chocolate;
+      font-size: 130%;
+    }
+    .far{
+      color: rgb(71, 71, 71);
+      font-size: 130%;
+      opacity: 1;
     }
   
   .new, .new1{

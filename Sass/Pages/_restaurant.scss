@@ -74,7 +74,7 @@
           }
           &-heart {
             width: 20%;
-            i {
+             & i{ 
               color: rgb(43, 43, 43);
               font-size: 150%;
               position: relative;
@@ -122,6 +122,11 @@
                 }
                  .checkrotate { 
                   animation: rotate 400ms;
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                 }
               
                 
@@ -146,10 +151,8 @@
                   border-bottom-right-radius: 20px;
                   width: 15%;
                   transform-origin: right;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                    & i{
+                  
+                    & .fas{
                       color: white;
                       opacity: 0.8;
                       font-size: 180%;
@@ -220,7 +223,6 @@
             filter: opacity(80%);
             filter: brightness(110%);
             box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
-            cursor: pointer;
           }
   
           &-b {

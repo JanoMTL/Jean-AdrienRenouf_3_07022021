@@ -9,12 +9,17 @@
 .loader {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0px;
   width: 100%;
   height: 100%;
   background-color: white;
   z-index: 10;
-  animation: loader 1s forwards;
+  animation: loader 3s forwards;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes loader {
@@ -34,7 +39,10 @@
   top: 0;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .loader .lettre {
@@ -63,14 +71,6 @@
     opacity: 0;
   }
 }
-.loader {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .chargement {
   width: 100%;
 }
@@ -506,8 +506,24 @@ input {
   align-items: center;
   cursor: pointer;
 }
+.section_3_2_cards_1_legend_heart:hover .fas {
+  animation: menu-anim 2s forwards;
+}
 .section_3_2_cards_1_legend_heart:hover .far {
-  color: #9356dc;
+  animation: lds-spinner 100ms forwards;
+}
+
+.fa-heart {
+  position: absolute;
+  opacity: 0;
+  color: chocolate;
+  font-size: 130%;
+}
+
+.far {
+  color: #474747;
+  font-size: 130%;
+  opacity: 1;
 }
 
 .new, .new1 {
@@ -693,6 +709,11 @@ footer a {
 }
 .R1-menu-carte-choix-entrees-nom :hover .checkrotate {
   animation: rotate 400ms;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .R1-menu-carte-choix-entrees-nom-x {
   width: 95%;
@@ -710,11 +731,8 @@ footer a {
   border-bottom-right-radius: 20px;
   width: 15%;
   transform-origin: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.R1-menu-carte-choix-entrees-nom-x-anim i {
+.R1-menu-carte-choix-entrees-nom-x-anim .fas {
   color: white;
   opacity: 0.8;
   font-size: 180%;
@@ -769,7 +787,6 @@ footer a {
   filter: opacity(80%);
   filter: brightness(110%);
   box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
-  cursor: pointer;
 }
 .R1-menu-carte-button-b {
   border-radius: 30px;
@@ -1105,10 +1122,10 @@ footer a {
     height: 6rem;
   }
   .R1-header-b2 {
-    width: 65%;
+    width: 60%;
   }
   .R1-header-b2-pict {
-    height: 4rem;
+    height: 3rem;
     width: 17rem;
   }
   .R1-menu-carte-choix {
