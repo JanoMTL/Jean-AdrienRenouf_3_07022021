@@ -73,15 +73,30 @@
             }
           }
           &-heart {
-            width: 20%;
-             & i{ 
+            width: 10%;
+            height: 30%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                         
+            :nth-child(1){ 
               color: rgb(43, 43, 43);
               font-size: 150%;
-              position: relative;
-              top: 35%;
-              left: 32%;
+              
             }
-          }
+            :nth-child(2){
+              font-size: 150%;
+              position: absolute;
+              opacity: 0;
+              background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+
+            }
+         
+            
+           }
         }
         &-choix {
           width: 100%;
@@ -152,7 +167,7 @@
                   width: 15%;
                   transform-origin: right;
                   
-                    & .fas{
+                    & .fa-check-circle{
                       color: white;
                       opacity: 0.8;
                       font-size: 180%;
@@ -222,6 +237,7 @@
           & :hover {
             filter: opacity(80%);
             filter: brightness(110%);
+            cursor:pointer;
             box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
           }
   
@@ -234,6 +250,7 @@
             border: none;
             box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
             color: white;
+            outline: none;
             background: linear-gradient(
               to bottom right,
               $secondary_color,
@@ -244,6 +261,7 @@
       }
     }
   }
+
   
   #p1 {
     animation-name: menu-anim;
@@ -293,4 +311,21 @@
     animation-name: menu-anim;
     animation-duration: 1000ms;
     animation-delay: 900ms;
+  }
+
+  .heart_anim :hover{
+     .far{
+      animation: lds-spinner 100ms forwards;
+ }
+    .fas{
+      animation: menu-anim 2s forwards;
+    }
+  }
+  .heart_anim{
+    
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }

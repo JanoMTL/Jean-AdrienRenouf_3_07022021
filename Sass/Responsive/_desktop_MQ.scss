@@ -1,5 +1,9 @@
 .Home {
-    border: blue solid;
+    
+    width: 100%;
+    margin: 0;
+    
+    
   }
   .header {
     height: 8rem;
@@ -12,6 +16,11 @@
       }
     }
   }
+  .loader{
+    width: 100%;
+  }
+
+ 
   .section_1_1 {
     &_map i {
       position: relative;
@@ -23,8 +32,8 @@
     }
   }
   .section_1 {
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
     &_1 {
       border-top-left-radius: 40px;
       border-top-right-radius: 40px;
@@ -39,12 +48,7 @@
         font-size: 130%;
       }
 
-      &_button_b {
-        width: 30%;
-        margin: 0;
-        position: relative;
-        bottom: 2.5rem;
-      }
+      
     }
   }
   .section_2 {
@@ -83,7 +87,11 @@
   }
   .section_3 {
     background-color: $background-color-2;
-    height: 65rem;
+    height: 60rem;
+    width: 80%;
+    margin: 10% 10% 5% 10%;
+    
+    
 
     &_1 {
       border-top-left-radius: 30px;
@@ -105,10 +113,13 @@
           height: 16rem;
         }
         &_1_legend_text_title h3 {
-          font-size: 115%;
+          font-size: 125%;
         }
         &_1_legend_text_subtitle p {
-          font-size: 110%;
+          font-size: 120%;
+        }
+        &_1_legend_heart > .fa-heart{
+          font-size: 180%;
         }
       }
     }
@@ -136,7 +147,7 @@
         align-items: center;
         padding-left: 1.5%;
         li p {
-          width: 400%;
+          width: 200%;
         }
 
         li i {

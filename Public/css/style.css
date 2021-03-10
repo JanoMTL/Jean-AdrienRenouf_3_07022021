@@ -14,7 +14,7 @@
   height: 100%;
   background-color: white;
   z-index: 10;
-  animation: loader 3s forwards;
+  animation: loader 0s forwards;
   width: 100%;
   height: 100%;
   display: flex;
@@ -236,7 +236,6 @@
   height: fit-content;
   margin: 0;
   font-family: "roboto", sans-serif;
-  border: black solid;
 }
 
 a {
@@ -291,7 +290,7 @@ input {
   justify-content: center;
   align-items: center;
 }
-.section_1_1_map i {
+.section_1_1_map .fa-map-marker-alt {
   margin: 0 2.5% 1% 0;
   color: #2e2e2e;
   font-size: 1.2rem;
@@ -323,21 +322,17 @@ input {
   width: 60%;
   display: flex;
   justify-content: center;
-  height: 22%;
-  margin-top: 4%;
-}
-.section_1_2_button :hover {
-  filter: opacity(80%);
-  filter: brightness(110%);
-  box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
-  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .section_1_2_button_b {
   border-radius: 30px;
-  width: 100%;
   height: 100%;
   font-size: 0.9rem;
+  padding: 5% 5% 5% 5%;
   font-weight: bold;
+  outline: none;
   border: none;
   box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
   color: white;
@@ -376,7 +371,7 @@ input {
   background-color: #f5edff;
   cursor: pointer;
 }
-.section_2_2_card:hover .fas {
+.section_2_2_card:hover .fa-mobile-alt, .section_2_2_card:hover .fa-list-ul, .section_2_2_card:hover .fa-store {
   color: #9356dc;
 }
 .section_2_2_card_s {
@@ -513,15 +508,17 @@ input {
   animation: lds-spinner 100ms forwards;
 }
 
-.fa-heart {
+.section_3_2_cards_1_legend_heart :nth-child(2) {
   position: absolute;
   opacity: 0;
-  color: chocolate;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 130%;
 }
 
 .far {
-  color: #474747;
+  color: #777575;
   font-size: 130%;
   opacity: 1;
 }
@@ -529,6 +526,7 @@ input {
 .new, .new1 {
   height: 14%;
   width: 22%;
+  min-width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -566,7 +564,6 @@ footer a {
 }
 .foot_list {
   width: 100%;
-  height: 75%;
 }
 .foot_list_icon {
   margin-right: 2%;
@@ -575,7 +572,7 @@ footer a {
   margin-right: 50%;
   font-size: 1rem;
 }
-.foot_list_icon .fas, .foot_list .far {
+.foot_list_icon .fa-utensils, .foot_list .fa-handshake {
   color: white;
 }
 .foot_list ul li {
@@ -664,14 +661,23 @@ footer a {
   font-weight: 400;
 }
 .R1-menu-carte-title-heart {
-  width: 20%;
+  width: 10%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.R1-menu-carte-title-heart i {
+.R1-menu-carte-title-heart :nth-child(1) {
   color: #2b2b2b;
   font-size: 150%;
-  position: relative;
-  top: 35%;
-  left: 32%;
+}
+.R1-menu-carte-title-heart :nth-child(2) {
+  font-size: 150%;
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .R1-menu-carte-choix {
   width: 100%;
@@ -732,7 +738,7 @@ footer a {
   width: 15%;
   transform-origin: right;
 }
-.R1-menu-carte-choix-entrees-nom-x-anim .fas {
+.R1-menu-carte-choix-entrees-nom-x-anim .fa-check-circle {
   color: white;
   opacity: 0.8;
   font-size: 180%;
@@ -786,6 +792,7 @@ footer a {
 .R1-menu-carte-button :hover {
   filter: opacity(80%);
   filter: brightness(110%);
+  cursor: pointer;
   box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
 }
 .R1-menu-carte-button-b {
@@ -797,6 +804,7 @@ footer a {
   border: none;
   box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
   color: white;
+  outline: none;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
 }
 
@@ -859,6 +867,21 @@ footer a {
   animation-delay: 900ms;
 }
 
+.heart_anim :hover .far {
+  animation: lds-spinner 100ms forwards;
+}
+.heart_anim :hover .fas {
+  animation: menu-anim 2s forwards;
+}
+
+.heart_anim {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 /* Media Queries - tablet */
 @media (min-width: 500px) and (max-width: 800px) {
   /* Home Page */
@@ -866,6 +889,7 @@ footer a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .section_1 {
@@ -883,6 +907,7 @@ footer a {
   }
   .section_1_2_button_b {
     width: 70%;
+    height: 3rem;
   }
 
   .section_2_2_card {
@@ -911,10 +936,10 @@ footer a {
     height: 13rem;
   }
   .section_3_2_cards_1_legend_text_title h3 {
-    font-size: 115%;
+    font-size: 100%;
   }
   .section_3_2_cards_1_legend_text_subtitle p {
-    font-size: 110%;
+    font-size: 100%;
   }
 
   .foot {
@@ -961,7 +986,8 @@ footer a {
 /* Media Queries - Desktop */
 @media (min-width: 801px) and (max-width: 3000px) {
   .Home {
-    border: blue solid;
+    width: 100%;
+    margin: 0;
   }
 
   .header {
@@ -976,6 +1002,10 @@ footer a {
     height: 4rem;
   }
 
+  .loader {
+    width: 100%;
+  }
+
   .section_1_1_map i {
     position: relative;
     top: 0.4rem;
@@ -986,8 +1016,8 @@ footer a {
   }
 
   .section_1 {
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
   }
   .section_1_1 {
     border-top-left-radius: 40px;
@@ -1002,12 +1032,6 @@ footer a {
   }
   .section_1_2_subtitle p {
     font-size: 130%;
-  }
-  .section_1_2_button_b {
-    width: 30%;
-    margin: 0;
-    position: relative;
-    bottom: 2.5rem;
   }
 
   .section_2 {
@@ -1044,7 +1068,9 @@ footer a {
 
   .section_3 {
     background-color: #f6f6f6;
-    height: 65rem;
+    height: 60rem;
+    width: 80%;
+    margin: 10% 10% 5% 10%;
   }
   .section_3_1 {
     border-top-left-radius: 30px;
@@ -1067,10 +1093,13 @@ footer a {
     height: 16rem;
   }
   .section_3_2_cards_1_legend_text_title h3 {
-    font-size: 115%;
+    font-size: 125%;
   }
   .section_3_2_cards_1_legend_text_subtitle p {
-    font-size: 110%;
+    font-size: 120%;
+  }
+  .section_3_2_cards_1_legend_heart > .fa-heart {
+    font-size: 180%;
   }
 
   .foot {
@@ -1098,7 +1127,7 @@ footer a {
     padding-left: 1.5%;
   }
   .foot_list ul li p {
-    width: 400%;
+    width: 200%;
   }
   .foot_list ul li i {
     font-size: 130%;
