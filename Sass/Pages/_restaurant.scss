@@ -1,348 +1,392 @@
 .R1 {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+  background-color: $background-color-2;
+  &-header {
     width: 100%;
+    margin: 0;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    &-b1 {
+      width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-tap-highlight-color: transparent;
+    }
+    &-b1 i {
+      color: #353535;
+    }
+    &-b1 i:hover {
+      color: #9356dc;
+    }
+    &-b2 {
+      width: 70%;
+      display: flex;
+      align-items: center;
+      &-pict {
+        height: 1.7rem;
+        width: 9rem;
+      }
+    }
+  }
+  &-menu {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 0;
-    font-family: "roboto", sans-serif;
-    background-color: $background-color-2;
     &-header {
       width: 100%;
-      margin: 0;
-      height: 3rem;
-      display: flex;
-      justify-content: space-between;
-      background-color: white;
-      &-b1 {
-        width: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      &-b1 i {
-        color: #353535;
-      }
-      &-b1 i:hover {
-        color: #9356dc;
-      }
-      &-b2 {
-        width: 70%;
-        display: flex;
-        align-items: center;
-        &-pict {
-          height: 1.7rem;
-          width: 9rem;
-        }
+      z-index: 2;
+      &-pict {
+        width: 100%;
+        height: 18rem;
+        -o-object-fit: cover;
+        object-fit: cover;
       }
     }
-    &-menu {
+    &-carte {
       width: 100%;
+      z-index: 1;
+      background-color: $background-color-2;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
       height: fit-content;
-      margin: 0;
-      &-header {
+      position: relative;
+      bottom: 4rem;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+
+      &-title {
         width: 100%;
-        z-index: 2;
-        &-pict {
-          width: 100%;
-          height: 18rem;
-          object-fit: cover;
-        }
-      }
-      &-carte {
-        width: 100%;
-        z-index: 1;
-        background-color: $background-color-2;
-        height: fit-content;
-        position: relative;
-        bottom: 4rem;
+        display: flex;
+        justify-content: space-between;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
-  
-        &-title {
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          border-top-left-radius: 40px;
-          border-top-right-radius: 40px;
-          background-color: $background-color-2;
-          &-text {
-            width: 70%;
-            margin-left: 5%;
-            font-family: "Shrikhand";
-            font-size: 140%;
-            & h2 {
-              font-weight:lighter;
-            }
-          }
-          &-heart {
-            width: 10%;
-            height: 30%;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-                         
-            :nth-child(1){ 
-              color: rgb(43, 43, 43);
-              font-size: 150%;
-              
-            }
-            :nth-child(2){
-              font-size: 150%;
-              position: absolute;
-              opacity: 0;
-              background: -webkit-gradient(linear, left top, left bottom, from($primary_color), to($secondary_color));
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-
-            }
-         
-            
-           }
-        }
-        &-choix {
-          width: 100%;
-          height: fit-content;
-          margin-bottom: 10%;
-          background-color: $background-color-2;
-  
-          &-entrees {
-            margin-bottom: 4%;
-            height: fit-content;
-            &-title {
-              margin-left: 7%;
-  
-              & h2 {
-                font-size: 105%;
-                font-weight: 400;
-                padding-bottom: 1%;
-                width: 11%;
-                border-bottom: solid #99e2d0;
-              }
-            }
-  
-            &-nom {
-              width: 100%;
-              height: fit-content;
-              :hover{
-                cursor: pointer;
-                & > :nth-child(3){
-
-                 background-color: #99E2D0;
-                 animation: menu 500ms;
-                 
-                 
-                }
-                & > #pricebox, #pricebox1, #pricebox2, #pricebox3, #pricebox4, #pricebox5, #pricebox6, #pricebox7, #pricebox8, #pricebox9, #pricebox10 {
-                  animation: price 500ms forwards;
-                  
-
-
-                }
-                 .checkrotate { 
-                  animation: rotate 400ms;
-                  height: 100%;
-                  width: 100%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                }
-              
-                
-
-              
-               
-            }
-              &-x {
-                
-                width: 95%;
-                height: 4.8rem;
-                display: flex;
-                justify-content: space-between;
-                background-color:white;
-                border-radius: 20px;
-                margin: 0 0 5% 2%;
-                position: relative;
-                box-shadow: rgb(231, 228, 228) 10px 10px 10px;
-                
-                &-anim{
-                  border-top-right-radius: 20px;
-                  border-bottom-right-radius: 20px;
-                  width: 15%;
-                  transform-origin: right;
-                  
-                    & .fa-check-circle{
-                      color: white;
-                      opacity: 0.8;
-                      font-size: 180%;
-
-                    }
-                  
-                
-                  
-                }
-                
-                &-text {
-                  width: 70%;
-                  margin-left: 4%;
-                  height: 100%;
-                  
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  
-  
-                  &-titre {
-                    margin: 0;
-                    padding: 0;
-                    height: fit-content;
-                    display: flex;
-                    align-content: flex-start;
-                    
-  
-                    & h3 {
-                      margin: 0;
-                      font-size: 100%;
-                      height: fit-content;
-                      
-                      
-                      
-                    }
-                   
-                  }
-                  &-stitre {
-                    margin: 0;
-                    padding: 0;
-                    height: fit-content;
-                    display: flex;
-                    align-content: flex-start;
-                    
-  
-                    & p {
-                      margin: 0;
-                      font-size: 85%;
-                      height: fit-content;
-                      
-                      
-                      
-                    }
-                  }
-                }
-                &-price {
-                  width: 5%;
-                  display: flex;
-                  justify-items: right;
-                  align-items: flex-end;
-                  color: rgb(53, 52, 52);
-                  position: relative;
-                  left: 5%;
-  
-                  & h3 {
-                    position: relative;
-                    top: 5%;
-                    font-size: 95%;
-                  }
-                }
-              }
-            }
+        background-color: $background-color-2;
+        &-text {
+          width: 70%;
+          margin-left: 5%;
+          font-family: "Shrikhand";
+          font-size: 140%;
+          & h2 {
+            font-weight: lighter;
           }
         }
-        &-button {
-          width: 100%;
+        &-heart {
+          width: 10%;
+          height: 30%;
+          -webkit-tap-highlight-color: transparent;
           display: flex;
           justify-content: center;
-          height: 3rem;
-          margin: 0;
-          & :hover {
-            filter: opacity(80%);
-            filter: brightness(110%);
-            cursor:pointer;
-            box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
+          align-items: center;
+
+          :nth-child(1) {
+            color: rgb(43, 43, 43);
+            font-size: 150%;
           }
-  
-          &-b {
-            border-radius: 30px;
-            width: 60%;
-            height: 100%;
-            font-size: 0.9rem;
-            font-weight: bold;
-            border: none;
-            box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
-            color: white;
-            outline: none;
-            background: linear-gradient(
-              to bottom right,
-              $secondary_color,
-              $primary_color
+          :nth-child(2) {
+            font-size: 150%;
+            position: absolute;
+            opacity: 0;
+            background: -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              from($primary_color),
+              to($secondary_color)
             );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
+        }
+      }
+      &-choix {
+        width: 100%;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-bottom: 10%;
+        background-color: $background-color-2;
+
+        &-entrees {
+          margin-bottom: 4%;
+          height: -webkit-fit-content;
+          height: -moz-fit-content;
+          height: fit-content;
+          &-title {
+            margin-left: 7%;
+
+            & h2 {
+              font-size: 105%;
+              font-weight: 400;
+              padding-bottom: 1%;
+              width: 11%;
+              border-bottom: solid #99e2d0;
+            }
+          }
+
+          &-nom {
+            width: 100%;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            :hover {
+              cursor: pointer;
+              & > :nth-child(3) {
+                background-color: #99e2d0;
+                -webkit-animation: menu 500ms;
+                animation: menu 500ms;
+              }
+              & > #pricebox,
+              #pricebox1,
+              #pricebox2,
+              #pricebox3,
+              #pricebox4,
+              #pricebox5,
+              #pricebox6,
+              #pricebox7,
+              #pricebox8,
+              #pricebox9,
+              #pricebox10 {
+                -webkit-animation: price 500ms forwards;
+                animation: price 500ms forwards;
+              }
+              .checkrotate {
+                -webkit-animation: rotate 400ms;
+                animation: rotate 400ms;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+            &-x {
+              width: 95%;
+              height: 4.8rem;
+              display: flex;
+              justify-content: space-between;
+              background-color: white;
+              border-radius: 20px;
+              margin: 0 0 5% 2%;
+              position: relative;
+              box-shadow: rgb(231, 228, 228) 10px 10px 10px;
+
+              &-anim {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                width: 15%;
+                transform-origin: right;
+
+                & .fa-check-circle {
+                  color: white;
+                  opacity: 0.8;
+                  font-size: 180%;
+                }
+              }
+
+              &-text {
+                width: 70%;
+                margin-left: 4%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &-titre {
+                  margin: 0;
+                  padding: 0;
+                  height: -webkit-fit-content;
+                  height: -moz-fit-content;
+                  height: fit-content;
+                  display: flex;
+                  align-content: flex-start;
+
+                  & h3 {
+                    margin: 0;
+                    font-size: 100%;
+                    height: -webkit-fit-content;
+                    height: -moz-fit-content;
+                    height: fit-content;
+                  }
+                }
+                &-stitre {
+                  margin: 0;
+                  padding: 0;
+                  height: -webkit-fit-content;
+                  height: -moz-fit-content;
+                  height: fit-content;
+                  display: flex;
+                  align-content: flex-start;
+
+                  & p {
+                    margin: 0;
+                    font-size: 85%;
+                    height: -webkit-fit-content;
+                    height: -moz-fit-content;
+                    height: fit-content;
+                  }
+                }
+              }
+              &-price {
+                width: 5%;
+                display: flex;
+                justify-items: right;
+                align-items: flex-end;
+                color: rgb(53, 52, 52);
+                position: relative;
+                left: 5%;
+
+                & h3 {
+                  position: relative;
+                  top: 5%;
+                  font-size: 95%;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+        margin: 0;
+        & :hover {
+          -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+          -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+          cursor: pointer;
+          box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
+        }
+
+        &-b {
+          border-radius: 30px;
+          width: 60%;
+          height: 100%;
+          font-size: 0.9rem;
+          font-weight: bold;
+          border: none;
+          box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
+          color: white;
+          outline: none;
+          background: linear-gradient(
+            to bottom right,
+            $secondary_color,
+            $primary_color
+          );
         }
       }
     }
   }
+}
 
-  
-  #p1 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-  }
-  #p2 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 100ms;
-  }
-  #p3 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 200ms;
-  }
-  #p4 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 300ms;
-  }
-  #p5 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 400ms;
-  }
-  #p6 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 500ms;
-  }
-  #p7 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 600ms;
-  }
-  #p8 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 700ms;
-  }
-  #p9 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 800ms;
-  }
-  #p10 {
-    animation-name: menu-anim;
-    animation-duration: 1000ms;
-    animation-delay: 900ms;
-  }
+#p1 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+#p2 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+#p3 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+#p4 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+#p5 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
+}
+#p6 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+#p7 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+#p8 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 700ms;
+  animation-delay: 700ms;
+}
+#p9 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+}
+#p10 {
+  -webkit-animation-name: menu-anim;
+  animation-name: menu-anim;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms;
+}
 
-  .heart_anim :hover{
-     .far{
-      animation: lds-spinner 100ms forwards;
- }
-    .fas{
-      animation: menu-anim 2s forwards;
-    }
+.heart_anim :hover {
+  .far {
+    -webkit-animation: lds-spinner 100ms forwards;
+    animation: lds-spinner 100ms forwards;
+    -webkit-tap-highlight-color: transparent;
   }
-  .heart_anim{
-    
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  .fas {
+    -webkit-animation: menu-anim 2s forwards;
+    animation: menu-anim 2s forwards;
   }
+}
+.heart_anim {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
