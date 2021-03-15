@@ -144,15 +144,27 @@
               & > :nth-child(3) {
                 background-color: #99e2d0;
                 -webkit-animation: menu 500ms;
-                animation: menu 500ms;
+                animation: menu;
+                -webkit-animation-duration: 500ms;
+                        animation-duration: 500ms;
               }
                .R1-menu-carte-choix-entrees-nom-x-text-stitre p{ 
-                animation: text_reduce 200ms forwards;
+                -webkit-animation: text_reduce; 
+                        animation: text_reduce;
+                -webkit-animation-duration: 200ms;
+                        animation-duration: 200ms;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
                 transform-origin: left;
                 
               }
               .R1-menu-carte-choix-entrees-nom-x-text-titre{
-                animation: text_reduce 200ms forwards;
+                -webkit-animation: text_reduce;
+                        animation: text_reduce;
+                -webkit-animation-duration: 200ms;
+                        animation-duration: 200ms;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
                 transform-origin: left;
               }
               
@@ -167,12 +179,18 @@
               #pricebox8,
               #pricebox9,
               #pricebox10 {
-                -webkit-animation: price 500ms forwards;
-                animation: price 500ms forwards;
+                -webkit-animation: price;
+                animation: price;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
+                -webkit-animation-duration: 500ms;
+                        animation-duration: 500ms;
               }
               .checkrotate {
                 -webkit-animation: rotate 400ms;
-                animation: rotate 400ms;
+                animation: rotate;
+                -webkit-animation-duration: 400ms;
+                        animation-duration: 400ms;
                 height: 100%;
                 width: 100%;
                 display: flex;
@@ -250,6 +268,8 @@
                     white-space: nowrap;
                     overflow: hidden;
                     width: 100%;
+                    height: -webkit-fit-content;
+                    height: -moz-fit-content;
                     height: fit-content;
                   }
                 }
@@ -390,13 +410,23 @@
 
 .heart_anim :hover {
   .far {
-    -webkit-animation: lds-spinner 100ms forwards;
-    animation: lds-spinner 100ms forwards;
+    -webkit-animation: lds-spinner;
+    -webkit-animation-duration: 100ms;
+            
+    -webkit-animation-fill-mode: forwards;
+            
+    animation: lds-spinner;
+    animation-fill-mode: forwards;
+    animation-duration: 100ms;
     -webkit-tap-highlight-color: transparent;
   }
   .fas {
-    -webkit-animation: menu-anim 2s forwards;
-    animation: menu-anim 2s forwards;
+    -webkit-animation: menu-anim;
+    animation: menu-anim;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 .heart_anim {

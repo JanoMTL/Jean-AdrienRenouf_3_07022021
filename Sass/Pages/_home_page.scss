@@ -289,11 +289,19 @@ input {
           &_heart:hover {
             .fas {
               -webkit-animation: menu-anim 2s forwards;
-              animation: menu-anim 2s forwards;
+              animation: menu-anim;
+              -webkit-animation-duration: 2s;
+                      animation-duration: 2s;
+              -webkit-animation-fill-mode: forwards;
+                      animation-fill-mode: forwards;
             }
             .far {
               -webkit-animation: lds-spinner 100ms forwards;
-              animation: lds-spinner 100ms forwards;
+              animation: lds-spinner;
+              -webkit-animation-fill-mode: forwards;
+                      animation-fill-mode: forwards;
+              -webkit-animation-duration: 100ms;
+                      animation-duration: 100ms;
             }
           }
         }
