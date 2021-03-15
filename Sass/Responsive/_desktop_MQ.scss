@@ -37,6 +37,9 @@
   &_2 {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    &_button{
+      margin-top: 1%;
+    }
     &_title h2 {
       font-size: 200%;
     }
@@ -176,15 +179,36 @@
   &-menu-carte-choix {
     width: 80%;
     margin-left: 10%;
+    &-entrees-title > h3{
+      font-size: 160%;
+    }
     &-entrees-nom-x {
       height: 20%;
       &-price {
         display: flex;
         justify-content: center;
+        align-content: flex-end;
+        margin-right: 1%;
+      }
+      &-text{
+        margin-top: 1rem;
+        &-titre >h3{
+          font-size: 120%;
+        }
+        &-stitre > p {
+          font-size: 100%;
+        }
       }
     }
   }
   &-menu-carte-button-b {
     width: 30%;
   }
+}
+.foot_list{
+  position: relative;
+  top: 20%;
+}
+.R1-menu-carte-button-b{
+  width: 20%;
 }

@@ -15,18 +15,21 @@
   &_2 {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    &_button_b {
-      width: 70%;
-      height: 3rem;
+    &_button {
+      margin: 2%;
+      &_b {
+        width: 70%;
+        height: 3rem;
+      }
     }
   }
 }
 .section_2 {
   &_2_card {
-    width: 70%;
+    width: 50%;
     &_s_num {
-      font-size: large;
-      padding: 1% 2% 1% 2%;
+      font-size:medium;
+      padding: 1% 2.3% 1% 2.3%;
     }
   }
 }
@@ -88,6 +91,12 @@
       }
     }
   }
+
+  .foot_list{
+    position: relative;
+    top: 20%;
+  }
+  
   .foot_list_text {
     width: 25%;
   }

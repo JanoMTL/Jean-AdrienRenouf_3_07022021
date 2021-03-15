@@ -76,6 +76,7 @@
           margin-left: 5%;
           font-family: "Shrikhand";
           font-size: 140%;
+          
           & h2 {
             font-weight: lighter;
           }
@@ -83,7 +84,7 @@
         &-heart {
           width: 10%;
           height: 30%;
-          -webkit-tap-highlight-color: transparent;
+          
           display: flex;
           justify-content: center;
           align-items: center;
@@ -145,6 +146,12 @@
                 -webkit-animation: menu 500ms;
                 animation: menu 500ms;
               }
+               .R1-menu-carte-choix-entrees-nom-x-text-stitre p{ 
+                animation: text_reduce 200ms forwards;
+                transform-origin: left;
+                
+              }
+              
               & > #pricebox,
               #pricebox1,
               #pricebox2,
@@ -197,7 +204,6 @@
                 width: 70%;
                 margin-left: 4%;
                 height: 100%;
-
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -205,6 +211,7 @@
                 &-titre {
                   margin: 0;
                   padding: 0;
+                  width: 100%;
                   height: -webkit-fit-content;
                   height: -moz-fit-content;
                   height: fit-content;
@@ -224,15 +231,21 @@
                   padding: 0;
                   height: -webkit-fit-content;
                   height: -moz-fit-content;
-                  height: fit-content;
+                  height: 1rem;
+                  width: 100%;
                   display: flex;
                   align-content: flex-start;
+                  
+                 
+                  
 
                   & p {
                     margin: 0;
-                    font-size: 85%;
-                    height: -webkit-fit-content;
-                    height: -moz-fit-content;
+                    font-size: 80%;
+                    text-overflow:ellipsis ;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 100%;
                     height: fit-content;
                   }
                 }

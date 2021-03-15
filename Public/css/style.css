@@ -319,6 +319,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes text_reduce {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 /* Home Page */
 .Home {
   width: 100%;
@@ -413,20 +421,27 @@ input {
   width: 60%;
   display: flex;
   justify-content: center;
-  height: 100%;
-  display: flex;
-  align-items: center;
+  height: 3rem;
+  margin-top: 5%;
+}
+.section_1_2_button :hover {
+  -webkit-filter: opacity(80%);
+  filter: opacity(80%);
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+  cursor: pointer;
+  box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
 }
 .section_1_2_button_b {
   border-radius: 30px;
-  height: 3rem;
+  width: 60%;
+  height: 100%;
   font-size: 0.9rem;
-  padding: 5% 5% 5% 5%;
   font-weight: bold;
-  outline: none;
   border: none;
   box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
   color: white;
+  outline: none;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
 }
 
@@ -772,7 +787,6 @@ footer a {
 .R1-menu-carte-title-heart {
   width: 10%;
   height: 30%;
-  -webkit-tap-highlight-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,6 +840,10 @@ footer a {
   background-color: #99e2d0;
   -webkit-animation: menu 500ms;
   animation: menu 500ms;
+}
+.R1-menu-carte-choix-entrees-nom :hover .R1-menu-carte-choix-entrees-nom-x-text-stitre p {
+  animation: text_reduce 200ms forwards;
+  transform-origin: left;
 }
 .R1-menu-carte-choix-entrees-nom :hover > #pricebox,
 .R1-menu-carte-choix-entrees-nom :hover #pricebox1,
@@ -883,6 +901,7 @@ footer a {
 .R1-menu-carte-choix-entrees-nom-x-text-titre {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -901,15 +920,18 @@ footer a {
   padding: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
-  height: fit-content;
+  height: 1rem;
+  width: 100%;
   display: flex;
   align-content: flex-start;
 }
 .R1-menu-carte-choix-entrees-nom-x-text-stitre p {
   margin: 0;
-  font-size: 85%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
+  font-size: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
   height: fit-content;
 }
 .R1-menu-carte-choix-entrees-nom-x-price {
@@ -1084,17 +1106,20 @@ footer a {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
   }
+  .section_1_2_button {
+    margin: 2%;
+  }
   .section_1_2_button_b {
     width: 70%;
     height: 3rem;
   }
 
   .section_2_2_card {
-    width: 70%;
+    width: 50%;
   }
   .section_2_2_card_s_num {
-    font-size: large;
-    padding: 1% 2% 1% 2%;
+    font-size: medium;
+    padding: 1% 2.3% 1% 2.3%;
   }
 
   .section_3 {
@@ -1153,6 +1178,10 @@ footer a {
     position: relative;
     right: 0.3rem;
   }
+  .foot .foot_list {
+    position: relative;
+    top: 20%;
+  }
   .foot .foot_list_text {
     width: 25%;
   }
@@ -1207,6 +1236,9 @@ footer a {
   .section_1_2 {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+  }
+  .section_1_2_button {
+    margin-top: 1%;
   }
   .section_1_2_title h2 {
     font-size: 200%;
@@ -1342,15 +1374,38 @@ footer a {
     width: 80%;
     margin-left: 10%;
   }
+  .R1-menu-carte-choix-entrees-title > h3 {
+    font-size: 160%;
+  }
   .R1-menu-carte-choix-entrees-nom-x {
     height: 20%;
   }
   .R1-menu-carte-choix-entrees-nom-x-price {
     display: flex;
     justify-content: center;
+    align-content: flex-end;
+    margin-right: 1%;
+  }
+  .R1-menu-carte-choix-entrees-nom-x-text {
+    margin-top: 1rem;
+  }
+  .R1-menu-carte-choix-entrees-nom-x-text-titre > h3 {
+    font-size: 120%;
+  }
+  .R1-menu-carte-choix-entrees-nom-x-text-stitre > p {
+    font-size: 100%;
   }
   .R1-menu-carte-button-b {
     width: 30%;
+  }
+
+  .foot_list {
+    position: relative;
+    top: 20%;
+  }
+
+  .R1-menu-carte-button-b {
+    width: 20%;
   }
 }
 
