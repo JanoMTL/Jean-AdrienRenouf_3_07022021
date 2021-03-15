@@ -845,6 +845,10 @@ footer a {
   animation: text_reduce 200ms forwards;
   transform-origin: left;
 }
+.R1-menu-carte-choix-entrees-nom :hover .R1-menu-carte-choix-entrees-nom-x-text-titre {
+  animation: text_reduce 200ms forwards;
+  transform-origin: left;
+}
 .R1-menu-carte-choix-entrees-nom :hover > #pricebox,
 .R1-menu-carte-choix-entrees-nom :hover #pricebox1,
 .R1-menu-carte-choix-entrees-nom :hover #pricebox2,
