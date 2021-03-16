@@ -1,0 +1,392 @@
+.Home {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body a {
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  &_logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      & h1{
+        font-family: shrikhand;
+      }
+  }
+}
+input {
+  width: 9rem;
+  height: 2rem;
+  border: none;
+  background-color: $background-color-1;
+  font-weight: 600;
+  font-size: 1rem;
+}
+/* Home page  Specific*/
+.section_1 {
+  width: 100%;
+  &_1 {
+    width: 100%;
+    height: 3rem;
+    background-color: $background-color-1;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+
+    &_map {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .fa-map-marker-alt {
+        margin: 0 2.5% 1% 0;
+        color: rgb(46, 46, 46);
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+    background-color: $background-color-2;
+
+    &_title {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      height: 30%;
+      font-weight: bolder;
+    }
+    &_subtitle {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      height: 25%;
+    }
+    &_button {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      height: 3rem;
+      margin-top: 5%;
+      & :hover {
+        -webkit-filter: opacity(80%);
+        filter: opacity(80%);
+        -webkit-filter: brightness(110%);
+        filter: brightness(110%);
+        cursor: pointer;
+        box-shadow: 0px 2px 17px 5px rgba(79, 79, 79, 0.32);
+      }
+
+      &_b {
+        border-radius: 30px;
+        width: 60%;
+        height: 100%;
+        font-size: 0.9rem;
+        font-weight: bold;
+        border: none;
+        box-shadow: 0px 4px 17px 2px rgba(79, 79, 79, 0.26);
+        color: white;
+        outline: none;
+        background: linear-gradient(
+          to bottom right,
+          $secondary_color,
+          $primary_color
+        );
+      }
+    }
+  }
+}
+.section_2 {
+  width: 100%;
+  height: 18rem;
+  &_1 {
+    width: 80%;
+    height: 18%;
+    margin-left: 3%;
+    font-weight: bolder;
+  }
+  &_2 {
+    width: 99%;
+    height: 82%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &_card {
+      display: flex;
+      width: 90%;
+      height: 28%;
+      margin-left: 5%;
+      background-color: $background-color-2;
+      border-radius: 20px;
+      box-shadow: rgb(204, 202, 202) 5px 5px 5px;
+      &:hover {
+        background-color: #f5edff;
+        cursor: pointer;
+        .fa-mobile-alt,
+        .fa-list-ul,
+        .fa-store {
+          color: $primary_color;
+        }
+      }
+      &_s {
+        width: 82%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        right: 0.8rem;
+        &_num {
+          background-color: $primary_color;
+          border-radius: 50%;
+          padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+          color: white;
+          font-size: small;
+        }
+
+        &_icon i,
+        &_icon1 i,
+        &_icon2 i {
+          color: grey;
+        }
+        &_icon1 i {
+          font-size: 1.4rem;
+          position: relative;
+          left: 0.3rem;
+        }
+        &_icon2 i {
+          position: relative;
+          left: 0.1rem;
+        }
+        &_text,
+        &_text1 {
+          font-weight: bolder;
+          font-size: 1.05rem;
+        }
+        &_text1 {
+          position: relative;
+          right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+.section_3 {
+  width: 100%;
+  height: 80rem;
+  margin-top: 10%;
+  &_1 {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    background-color: $background-color-2;
+
+    &_title {
+      height: 50%;
+      margin: 0 0 2% 3%;
+    }
+  }
+  &_2 {
+    width: 100%;
+    height: 93%;
+    margin: 0;
+    background-color: $background-color-2;
+    &_cards {
+      width: 100%;
+      height: 22%;
+      display: flex;
+      margin-bottom: 5%;
+      justify-items: center;
+
+      &_1 {
+        width: 90%;
+        height: 90%;
+        margin: 2% 0 0 4.2%;
+        border-radius: 20px;
+        background-color: white;
+        -webkit-tap-highlight-color: transparent;
+        box-shadow: rgb(221, 220, 220) 5px 5px 5px;
+        &_pict {
+          width: 99%;
+          height: 70%;
+          &_1 {
+            width: 101%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            -o-object-fit: cover;
+            object-fit: cover;
+          }
+        }
+        &_legend {
+          width: 100%;
+          height: 30%;
+          display: flex;
+
+          &_text {
+            width: 75%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            &_title {
+              width: 100%;
+              height: 45%;
+              display: flex;
+              align-items: flex-start;
+              position: relative;
+              bottom: 9%;
+              left: 5%;
+              & h3 {
+                font-size: 120%;
+              }
+            }
+            &_subtitle {
+              width: 100%;
+              height: 40%;
+              display: flex;
+              align-items: center;
+              position: relative;
+              bottom: 6%;
+              left: 5%;
+              & p {
+                font-size: 100%;
+              }
+            }
+          }
+          &_heart {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+          }
+          &_heart:hover {
+            .fas {
+              -webkit-animation: menu-anim 2s forwards;
+              animation: menu-anim;
+              -webkit-animation-duration: 2s;
+                      animation-duration: 2s;
+              -webkit-animation-fill-mode: forwards;
+                      animation-fill-mode: forwards;
+            }
+            .far {
+              -webkit-animation: lds-spinner 100ms forwards;
+              animation: lds-spinner;
+              -webkit-animation-fill-mode: forwards;
+                      animation-fill-mode: forwards;
+              -webkit-animation-duration: 100ms;
+                      animation-duration: 100ms;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section_3_2_cards_1_legend_heart :nth-child(2) {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($primary_color),
+    to($secondary_color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 130%;
+}
+.far {
+  color: rgb(119, 117, 117);
+  font-size: 130%;
+  opacity: 1;
+}
+
+.new,
+.new1 {
+  height: 14%;
+  width: 22%;
+  min-width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  border-radius: 5px;
+  position: relative;
+  left: 72%;
+  bottom: 90%;
+  & p {
+    color: #008766;
+    font-size: 100%;
+    font-weight: 600;
+  }
+}
+footer a {
+  color: white;
+}
+.foot {
+  width: 100%;
+  height: 18rem;
+  background-color: $background-color-footer;
+  color: white;
+
+  &_logo {
+    width: 60%;
+    height: 25%;
+
+    &_ohmyfood {
+      background-color: transparent;
+      width: 10rem;
+      margin-left: 1rem;
+      padding: 5% 0 0 5%;
+    }
+  }
+  &_list {
+    width: 100%;
+
+    &_icon {
+      margin-right: 2%;
+    }
+    &_icon i {
+      margin-right: 50%;
+      font-size: 1rem;
+    }
+    &_icon .fa-utensils,
+    .fa-handshake {
+      color: white;
+    }
+  }
+  &_list ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 2.2rem;
+  }
+}

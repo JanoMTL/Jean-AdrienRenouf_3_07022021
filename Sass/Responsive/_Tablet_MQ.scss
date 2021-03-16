@@ -1,0 +1,114 @@
+.Home {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.header_logo h1{
+  font-size: 2.5rem;
+}
+.section_1 {
+  width: 85%;
+  box-shadow: rgb(221, 220, 220) 5px 5px 5px;
+  border-radius: 30px;
+  &_1 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  &_2 {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    &_button {
+      margin: 2%;
+      &_b {
+        width: 70%;
+        height: 3rem;
+      }
+    }
+  }
+}
+.section_2 {
+  &_2_card {
+    width: 50%;
+    &_s_num {
+      font-size:medium;
+      padding: 1% 2.3% 1% 2.3%;
+    }
+  }
+}
+.section_3 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 95%;
+  background-color: $background-color-2;
+
+  &_2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_cards {
+      width: 48%;
+      height: 20rem;
+      margin-left: 1.5%;
+      &_1_pict {
+        height: 13rem;
+      }
+      &_1_legend_text_title h3 {
+        font-size: 100%;
+      }
+      &_1_legend_text_subtitle p {
+        font-size: 100%;
+      }
+    }
+  }
+}
+
+.foot {
+  height: 12rem;
+  &_logo {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    &_ohmyfood {
+      height: 50%;
+    }
+  }
+  &_list {
+    justify-content: flex-start;
+    & ul {
+      height: 60%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-left: 1.5%;
+      li p {
+        width: 400%;
+      }
+
+      li i {
+        font-size: 130%;
+        position: relative;
+        right: 0.3rem;
+      }
+    }
+  }
+
+  .foot_list{
+    position: relative;
+    top: 20%;
+  }
+  
+  .foot_list_text {
+    width: 25%;
+  }
+}
+.R1 {
+  &-header-b2 {
+    width: 60%;
+  }
+  &-menu-carte-button-b {
+    width: 40%;
+  }
+}

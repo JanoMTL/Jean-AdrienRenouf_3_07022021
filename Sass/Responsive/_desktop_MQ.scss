@@ -1,0 +1,216 @@
+.Home {
+  width: 100%;
+  margin: 0;
+}
+.header {
+  height: 8rem;
+  width: 100%;
+  &_logo {
+    height: 100%;
+      & h1{
+        font-size: 3.5rem;
+      }
+    
+  }
+}
+.loader {
+  width: 100%;
+}
+
+.section_1_1 {
+  &_map i {
+    position: relative;
+    top: 0.4rem;
+  }
+  &_map input {
+    font-size: 1.4rem;
+    width: 14rem;
+  }
+}
+.section_1 {
+  width: 80%;
+  margin-left: 10%;
+  &_1 {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  &_2 {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    &_button{
+      margin-top: 1%;
+        &_b{
+          width: 40%;
+        }
+    }
+    &_title h2 {
+      font-size: 200%;
+    }
+    &_subtitle p {
+      font-size: 130%;
+    }
+  }
+}
+.section_2 {
+  height: 8rem;
+  &_1 {
+    font-size: 120%;
+  }
+
+  &_2 {
+    flex-direction: row;
+    margin: 0;
+    margin-top: 5%;
+    &_card {
+      width: 30%;
+      height: 6rem;
+      &_s_text p,
+      &_s_text1 p {
+        font-size: 100%;
+        margin-left: 20%;
+      }
+      &_s_num {
+        font-size: 150%;
+        padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+      }
+      &_s_icon,
+      &_s_icon2 {
+        font-size: 150%;
+        margin-left: 5%;
+      }
+      &_s_icon1 i {
+        font-size: 180%;
+        margin-left: 5%;
+      }
+    }
+  }
+}
+.section_3 {
+  background-color: $background-color-2;
+  height: 60rem;
+  width: 80%;
+  margin: 10% 10% 5% 10%;
+
+  &_1 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    &_title {
+      font-size: 120%;
+    }
+  }
+  &_2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60rem;
+
+    &_cards {
+      width: 48%;
+      height: 25rem;
+      margin-left: 1.5%;
+      &_1_pict {
+        height: 16rem;
+      }
+      &_1_legend_text_title h3 {
+        font-size: 125%;
+      }
+      &_1_legend_text_subtitle p {
+        font-size: 120%;
+      }
+      &_1_legend_heart > .fa-heart {
+        font-size: 180%;
+      }
+    }
+  }
+}
+.foot {
+  height: 12rem;
+  &_logo {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_ohmyfood {
+      height: 50%;
+      position: relative;
+      bottom: 50%;
+    }
+  }
+  &_list {
+    justify-content: flex-start;
+    & ul {
+      height: 60%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-left: 1.5%;
+      li p {
+        width: 200%;
+      }
+
+      li i {
+        font-size: 130%;
+        position: relative;
+        right: 0.3rem;
+      }
+    }
+  }
+  &_text {
+    width: 25%;
+  }
+}
+
+/* Restaurant Page General */
+
+.header_cont_arrow i {
+  font-size: 170%;
+}
+
+.R1 {
+  width: 100%;
+  font-size: 120%;
+  &-header {
+    height: 6rem;
+    &-b2 {
+      width: 60%;
+      &-pict {
+        height: 3rem;
+        width: 17rem;
+      }
+    }
+  }
+  &-menu-carte-choix {
+    width: 80%;
+    margin-left: 10%;
+    &-entrees-title > h3{
+      font-size: 160%;
+    }
+    &-entrees-nom-x {
+      height: 5rem;
+      &-price {
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        margin-right: 1%;
+      }
+      &-text{
+        &-titre >h3{
+          font-size: 120%;
+        }
+        &-stitre > p {
+          font-size: 100%;
+        }
+      }
+    }
+  }
+  &-menu-carte-button-b {
+    width: 30%;
+  }
+}
+.foot_list{
+  position: relative;
+  top: 20%;
+}
+.R1-menu-carte-button-b{
+  width: 20%;
+}
