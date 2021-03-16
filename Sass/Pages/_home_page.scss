@@ -22,10 +22,9 @@ body a {
     display: flex;
     justify-content: center;
     align-items: center;
-    &_pict {
-      height: 2rem;
-      width: 11rem;
-    }
+      & h1{
+        font-family: shrikhand;
+      }
   }
 }
 input {
@@ -162,7 +161,7 @@ input {
         &_num {
           background-color: $primary_color;
           border-radius: 50%;
-          padding: 1.2% 2.8% 1.2% 2.8%;
+          padding: 0.2rem 0.4rem 0.2rem 0.4rem;
           color: white;
           font-size: small;
         }
