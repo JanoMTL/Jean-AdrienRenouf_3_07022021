@@ -1,2 +1,2 @@
-# P3-Ohmyfood
+# Ohmyfood
 Responsive App
