@@ -157,11 +157,10 @@
 }
 
 .lds-spinner {
-  color: official;
   display: inline-block;
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .lds-spinner div {
@@ -170,8 +169,8 @@
   animation: lds-spinner 1.2s linear infinite;
 }
 
-.lds-spinner div:after {
-  content: " ";
+.lds-spinner div::after {
+  content: "";
   display: block;
   position: absolute;
   top: 3px;
