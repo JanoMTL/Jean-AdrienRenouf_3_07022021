@@ -248,6 +248,9 @@
                     height: -webkit-fit-content;
                     height: -moz-fit-content;
                     height: fit-content;
+                    text-overflow:ellipsis ;
+                    white-space: nowrap;
+                    overflow: hidden;
                   }
                 }
                 &-stitre {
